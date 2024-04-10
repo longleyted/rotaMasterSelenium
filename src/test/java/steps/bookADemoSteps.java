@@ -10,13 +10,9 @@ import org.apache.log4j.*;
 public class bookADemoSteps extends DriverManager {
 
     WebDriver chromeDriver;
-
     bookADemoPage bookADemoPage;
-
     homePage homePage;
-
     private static final Logger LOG = LogManager.getLogger(bookADemoSteps.class);
-
 
     public bookADemoSteps(){
         this.chromeDriver = getWebDriver();

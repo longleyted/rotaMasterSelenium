@@ -4,7 +4,6 @@ import io.cucumber.testng.*;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -12,18 +11,18 @@ import org.testng.annotations.Test;
 import steps.homeSteps;
 import utils.DriverManager;
 
-
 @CucumberOptions(
         glue = "steps",
         features = "src/test/resources/features",
         tags = "not @outOfScope",
-        monochrome = true,
         plugin = {
                 "summary",
                 "pretty"
         },
+        monochrome = true,
         publish = true
 )
+
 @Test
 public class BaseRunner extends AbstractTestNGCucumberTests {
 

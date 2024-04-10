@@ -55,9 +55,7 @@ public class bookADemoPage extends DriverManager {
     WebElement numberOfStaffBox;
 
 
-    public void assertBookADemoPage() {
-        pagesHelper.isElementDisplayed(indicatesRequiredFields);
-    }
+    public void assertBookADemoPage() { pagesHelper.isElementDisplayed(indicatesRequiredFields); }
 
     public void enterFirstName() { pagesHelper.sendText(firstNameTextBox, "This is some sample text"); }
 
